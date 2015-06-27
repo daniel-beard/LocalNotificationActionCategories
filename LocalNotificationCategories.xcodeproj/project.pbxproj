@@ -159,6 +159,7 @@
 		246761D61AE0656000F6E814 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0630;
 				ORGANIZATIONNAME = DanielBeard;
 				TargetAttributes = {
@@ -413,6 +414,7 @@
 				246761FF1AE0656000F6E814 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		246762001AE0656000F6E814 /* Build configuration list for PBXNativeTarget "LocalNotificationCategoriesTests" */ = {
 			isa = XCConfigurationList;
@@ -421,6 +423,7 @@
 				246762021AE0656000F6E814 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

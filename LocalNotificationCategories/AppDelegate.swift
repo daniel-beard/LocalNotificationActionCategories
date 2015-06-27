@@ -18,7 +18,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         // Register for notifications
         let categories = NotificationCategories.categories()
-        let settings = UIUserNotificationSettings(forTypes: (.Alert | .Badge | .Sound), categories: categories)
+        let settings = UIUserNotificationSettings(forTypes: ([.Alert, .Badge, .Sound]), categories: categories)
         UIApplication.sharedApplication().registerUserNotificationSettings(settings)
         
         return true
@@ -27,7 +27,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     // Handle tapping on a notification action
     func application(application: UIApplication, handleActionWithIdentifier identifier: String?, forLocalNotification notification: UILocalNotification, completionHandler: () -> Void) {
         if let action = identifier {
-            println("action tapped: \(action)")
+            print("action tapped: \(action)")
         }
         completionHandler()
     }
@@ -37,9 +37,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     //  - When app is in the BG, this will fire when user taps on the notification
     func application(application: UIApplication, didReceiveLocalNotification notification: UILocalNotification) {
         if let category = notification.category {
-            println("Received a local notification with category: \(category)")
+            print("Received a local notification with category: \(category)")
         } else {
-            println("Received a local notification without a category")
+            print("Received a local notification without a category")
         }
     }
 
